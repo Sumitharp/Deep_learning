@@ -16,19 +16,23 @@ In each Jupyter Notebook, we create the same custom LSTM RNN architecture. In on
 
 Using the models we answer the following:
 
-> Which model has a lower loss?
+> - Which model has a lower loss?
 ><p>The lstm_stock_predictor_closing model has lower loss of 0.0109 compared to lstm_stock_predictor_fng model loss of 0.0758.
 
 
-> Which model tracks the actual values better over time?
+> -  Which model tracks the actual values better over time?
 > <p>The lstm_stock_predictor_closing model tracks the actual value better over time. This can be seen from the below charts. 
 * LSTM closing price model with a window size of 10 and 150 epochs is better than same model run with 50 epochs. 
 
 ![150+epochs.png](Images/150+epochs.png)
 
-![75_epochs.png](Images/75_epochs.png)
+![75_epochs.png](Images/50_epochs.png)
+
+### Compared to the lstm_stock_predictor_closing, the **lstm_stock_predictor_fng** model gives poor results and is unable to predict the movement in the Bitcoin prices. This can be ssen from the chart below
+
+![fng_150.png](Images/fng_150.png)
 
 
 
-> Which window size works best for the model?
-><p>Window size of 10 works best for the model
+> - Which window size works best for the model?
+><p>Window size of 10 works best for the lstm_stock_predictor_closing model.
